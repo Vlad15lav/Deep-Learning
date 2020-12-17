@@ -27,7 +27,7 @@ class SGD:
         if self._reg:
             for l in reversed(layers):
                 if hasattr(l, 'W'):
-                    l.W.grad += reg * 2 * l.W.value
+                    l.W.grad += self._reg * 2 * l.W.value
 
         for idx, l in enumerate(layers):
             if hasattr(l, 'W'):
@@ -70,7 +70,7 @@ class RMSProp:
         if self._reg:
             for l in reversed(layers):
                 if hasattr(l, 'W'):
-                    l.W.grad += reg * 2 * l.W.value
+                    l.W.grad += self._reg * 2 * l.W.value
 
         for idx, l in enumerate(layers):
             if hasattr(l, 'W'):
