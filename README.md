@@ -7,7 +7,7 @@ Topics and tasks for the deep learning
 
 ## Multilayered Perceptron
 Custom Multilayered perceptron. Activation function: ReLU, Sigmoid. Softmax. Backpropagation. CrossEntropy, MSE, L1, BCE. Regularization.</br>
-![](/Perceptron/imgs/net_example.jpg)</br>
-![](/Perceptron/imgs/backpropagation.png)
+![](/NeuralNetwork/imgs/net_example.jpg)</br>
+![](/NeuralNetwork/imgs/backpropagation.png)
 
 ## Convolutional Network
