@@ -56,16 +56,16 @@ def main():
     for epoch in range(epoches):
         # Training
         model.zero_grad()
-        output = model.forward(x_train, True)
+        output = model.forward(x_train, training=True)
         model.backward(output, t_train)
         model.step()
 
-        output = model.forward(x_train, False)
+        output = model.forward(x_train, training=False)
         train_error.append(criterion.loss(output, t_train))
         train_accuracy.append(Accuracy(output, t_train))
 
         # Validation
-        output = model.forward(x_val, False)
+        output = model.forward(x_val, training=False)
         val_error.append(criterion.loss(output, t_val))
         val_accuracy.append(Accuracy(output, t_val))
 
@@ -82,7 +82,7 @@ def main():
     axes[1].legend()
     plt.show()
 
-    print('Test accuracy - {}'.format(Accuracy(model.forward(x_test, False), t_test)))
+    print('Test accuracy - {}'.format(Accuracy(model.forward(x_test, training=False), t_test)))
     model.save_weights()
 
 if __name__ == '__main__':
