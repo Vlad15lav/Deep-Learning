@@ -43,8 +43,8 @@ def main():
     # Build model and parametrs training
     model = NeuralNetwork(layers)
     criterion = Criterion('CrossEntropy')
-    learning_rate = 0.0001
-    reg = 0.000005
+    learning_rate = 0.01
+    reg = 0.005
     model.set_optimizer(SGD(learning_rate, reg))
     epoches = 100
 
