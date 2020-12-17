@@ -7,8 +7,7 @@ Topics and tasks for the deep learning 🎓🤖〽
 
 ## Multilayered Perceptron
 Custom Multilayered perceptron. Activation function: ReLU, Sigmoid. Softmax. Backpropagation. CrossEntropy, MSE, L1, BCE. Regularization.</br>
-![](/NeuralNetwork/imgs/net_example.jpg)</br>
-![](/NeuralNetwork/imgs/backpropagation.png)
+[Material](https://github.com/Vlad15lav/Deep-Learning/tree/main/NeuralNetwork/imgs)
 
 ## Convolutional Network
 Custom CNN. Otimizers: SGD, Adam, RMSProp. Dropout. CIFAR-10 dataset.
