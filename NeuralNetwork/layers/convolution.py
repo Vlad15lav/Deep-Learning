@@ -1,4 +1,5 @@
 from layers.fastconv import im2col, col2im
+from layers.param import *
 import numpy as np
 
 class Conv2D:
