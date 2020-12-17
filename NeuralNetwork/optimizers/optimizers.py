@@ -24,6 +24,9 @@ class SGD:
         return f"dw{idx}", f"db{idx}"
 
     def update_weight(self, layers):
+        if len(self._cache_vx) == 0:
+            self._init_cache(layers)
+        
         if self._reg:
             for l in reversed(layers):
                 if hasattr(l, 'W'):
