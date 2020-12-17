@@ -11,3 +11,4 @@ Custom Multilayered perceptron. Activation function: ReLU, Sigmoid. Softmax. Bac
 
 ## Convolutional Network
 Custom CNN. Otimizers: SGD, Adam, RMSProp. Dropout. CIFAR-10 dataset.
+[Tutorial](https://github.com/Vlad15lav/Deep-Learning/blob/main/NeuralNetwork/books/tutorial.ipynb)
