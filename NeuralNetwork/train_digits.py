@@ -56,16 +56,16 @@ def main():
     for epoch in range(epoches):
         # Training
         model.zero_grad()
-        output = model.forward(x_train)
+        output = model.forward(x_train, True)
         model.backward(output, t_train)
         model.step()
 
-        output = model.forward(x_train)
+        output = model.forward(x_train, False)
         train_error.append(criterion.loss(output, t_train))
         train_accuracy.append(Accuracy(output, t_train))
 
         # Validation
-        output = model.forward(x_val)
+        output = model.forward(x_val, False)
         val_error.append(criterion.loss(output, t_val))
         val_accuracy.append(Accuracy(output, t_val))
 
