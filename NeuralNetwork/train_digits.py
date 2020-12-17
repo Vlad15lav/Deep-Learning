@@ -82,7 +82,7 @@ def main():
     axes[1].legend()
     plt.show()
 
-    print('Test accuracy - {}'.format(Accuracy(model.forward(x_test), t_test)))
+    print('Test accuracy - {}'.format(Accuracy(model.forward(x_test, False), t_test)))
     model.save_weights()
 
 if __name__ == '__main__':
