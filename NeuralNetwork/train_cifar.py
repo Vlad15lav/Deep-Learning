@@ -52,7 +52,7 @@ def train(model, TrainLoader, ValidLoader, epochs, criterion):
     plt.ioff()
 
 def main():
-    path_batches = 'cifar-10-batches-py/'
+    path_batches = 'dataset/cifar-10-batches-py/'
     files = {'train': ['data_batch_1', 'data_batch_2', 'data_batch_3', 'data_batch_4'],
              'valid': ['data_batch_5'],
              'test': ['test_batch']}
