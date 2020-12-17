@@ -14,7 +14,7 @@ class ReLU:
     def zero_grad(self):
         pass
 
-    def forward(self, X):
+    def forward(self, X, training):
         self.deriv = (X > 0)
         return X * self.deriv
 
@@ -36,7 +36,7 @@ class Sigmoid:
     def zero_grad(self):
         pass
 
-    def forward(self, X):
+    def forward(self, X, training):
         self.deriv = (1 / (1 + np.exp(-X))) * (1 - 1 / (1 + np.exp(-X)))
         return 1 / (1 + np.exp(-X))
 
@@ -58,7 +58,7 @@ class Softmax:
     def zero_grad(self):
         pass
 
-    def forward(self, Z_last):
+    def forward(self, Z_last, training):
         Z_last -= np.max(Z_last, axis=1).T.reshape((Z_last.shape[0], 1))
         return np.exp(Z_last) / np.sum(np.exp(Z_last), axis=1).T.reshape((Z_last.shape[0], 1))
 
