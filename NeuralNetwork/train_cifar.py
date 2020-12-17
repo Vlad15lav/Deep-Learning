@@ -1,4 +1,5 @@
 from utils.tools import *
+from activation.activation import *
 from layers.convolution import *
 from layers.dropout import *
 from layers.flatten import *
