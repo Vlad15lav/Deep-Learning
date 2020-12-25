@@ -1,5 +1,5 @@
 # Deep Learning
-Topics and tasks for the deep learning 🎓🤖〽
+Topics and tasks for the Deep Learning 🎓🤖〽
 1. Multilayered Perceptron
 2. Convolutional Network
 
