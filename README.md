@@ -1,5 +1,5 @@
 # Deep Learning
-Topics and tasks for the Deep Learning 🎓🤖〽
+Реализация нейронных сетей с использованием Numpy: 
 1. Multilayered Perceptron
 2. Convolutional Network
 
